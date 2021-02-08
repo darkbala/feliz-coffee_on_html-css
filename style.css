@@ -1,0 +1,1816 @@
+@font-face {
+    font-family: 'SignPainter';
+    src: url('./fonts/232-font.otf');
+    src: local(':relaxed:'), url('./fonts/232-font.otf') format('woff'),
+      url('./fonts/232-font.otf') format('truetype'),
+      url('./fonts/232-font.otf') format('svg');
+    font-weight: normal;
+    font-style: italic;
+  }
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+/* ////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////// */
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 110px;
+    z-index: 10;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #21453D 0%, #256759 27.6%), #256759;
+}
+.head{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.head .logo{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    margin-top: 30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 555px ;
+    height: 90%;
+    background-image: url(./img/bamboo-wood-texture-desk_42702-71\ 1.png);
+    filter: drop-shadow(0px 9px 0px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    margin-left: 5%;
+}
+.nav a{
+    font-size: 55px;
+    color: white;
+    font-family: 'SignPainter';
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+}
+/* .........подчеркивание....... */
+.nav a::before{
+    content: '';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: white;
+    transition: 0.2s;
+}
+.nav a:hover:before{
+    width: 100%;
+    left: 0;
+}   
+/* ............................ */
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    margin-right: 5%;
+}
+.nav2 a{
+    font-family: 'SignPainter';
+    font-size: 48px;
+    list-style: none;
+    text-decoration: none;
+    width: 210px;
+    color: white;
+    line-height: 45px;
+    margin-right: 20px;
+}
+
+/* /////////////////////////////////////////////////////////SECTION///////////////////////////////////////////////////////// */
+section{
+    background-image: url(./img/coffee-bg.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    width: 100%;
+    height: 810px;
+    padding-top: 130px;
+}
+.bg{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+}
+.bg img{
+    position: absolute;
+}
+.first_png{
+    width: 93%;
+    height: 600px;
+    margin-top: 2%;
+    margin-left: 3.5%;
+}
+.second_png{
+    width: 63%;
+    height:270px;
+    margin-left: 37%;
+    margin-top: -2%;
+}
+.third_png{
+    width: 40%;
+    height: 400px;
+    opacity: 80%;
+    margin-top: 43%;
+    margin-left: 10%;
+}
+.content{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.photo_scale{
+    width: 60%;
+    height:540px;
+    margin-top: 20px;
+}
+.description{
+    width: 40%;
+}
+.description p{
+    text-align: right;
+    font-size: 48px;
+    font-family: 'SignPainter';
+    line-height: 40px;
+    align-items: center;
+}
+.because{
+    font-size: 48px;
+    font-family: 'SignPainter';
+    line-height: normal;
+    align-items: center;
+    color: #CD901B;
+}
+.arabic{
+    color: green;
+    font-size: 70px;
+    display: inline-block;
+    margin: 25px 0 0 0;
+}
+.kinds{
+    color: red;
+}
+/* ////////////////////////////////////////////////ARTICLE/////////////////////////////////////////////////////////////// */
+article{
+    width: 100%;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/46619618\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* //////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////////// */
+footer{
+    background:linear-gradient(180deg,#256759 ,#183F37);
+    padding: 7px ;
+    display: flex;
+    justify-content: space-around;
+    width:auto;
+    margin-top: -10px;
+}
+.footer-logo{
+    width: 170px;
+    height: 170px;
+    margin-top: 10px;
+}
+.footer-call h2{
+    margin: 0;
+    font-size: 40px;
+    color:white;
+}
+.footer-call input{
+    width: 600px;
+    border-radius: 9px;
+    border: none;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 12px; 
+    margin-top: 10px;
+    background: #C4D4D0;
+}
+.footer-call .adress p{
+    font-size: 25px;
+    margin-top: 0;
+    margin-left: 10px;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+}
+.footer-call .adress{
+    display: flex;
+    margin-top: 20px;
+}
+.footer-call .adress img{
+    width: 30px;
+    height: 30px;
+}
+footer .contacts{
+    width: 230px;
+}
+footer .contacts p{
+    font-size: 25px;
+    margin-top:10px;
+    color:white;
+}
+footer .contacts p a{
+    color:white;
+    text-decoration: none;
+}
+::placeholder{
+    color: whitesmoke;
+    font-family:'Roboto' ;
+    font-size: 27px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1600px){
+    html,
+body{
+    margin: 0;
+    padding: 0;
+}
+/* ////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////// */
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 110px;
+    z-index: 10;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #21453D 0%, #256759 27.6%), #256759;
+}
+.head{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.head .logo{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    margin-top: 30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 555px ;
+    height: 90%;
+    background-image: url(./img/bamboo-wood-texture-desk_42702-71\ 1.png);
+    filter: drop-shadow(0px 9px 0px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    margin-left: 5%;
+}
+.nav a{
+    font-size: 55px;
+    color: white;
+    font-family: 'SignPainter';
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+}
+/* .........подчеркивание....... */
+.nav a::before{
+    content: '';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: white;
+    transition: 0.2s;
+}
+.nav a:hover:before{
+    width: 100%;
+    left: 0;
+}   
+/* ............................ */
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    margin-right: 5%;
+}
+.nav2 a{
+    font-family: 'SignPainter';
+    font-size: 48px;
+    list-style: none;
+    text-decoration: none;
+    width: 210px;
+    color: white;
+    line-height: 45px;
+    margin-right: 20px;
+}
+
+/* /////////////////////////////////////////////////////////SECTION///////////////////////////////////////////////////////// */
+section{
+    background-image: url(./img/coffee-bg.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    width: 100%;
+    height: 780px;
+    padding-top: 130px;
+}
+.bg{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+}
+.bg img{
+    position: absolute;
+}
+.first_png{
+    width: 93%;
+    height: 600px;
+    margin-top: 2%;
+    margin-left: 3.5%;
+}
+.second_png{
+    width: 63%;
+    height:270px;
+    margin-left: 37%;
+    margin-top: -2%;
+}
+.third_png{
+    width: 40%;
+    height: 400px;
+    opacity: 80%;
+    margin-top: 43%;
+    margin-left: 10%;
+}
+.content{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.photo_scale{
+    width: 60%;
+    height:540px;
+    margin-top: 20px;
+}
+.description{
+    width: 40%;
+}
+.description p{
+    text-align: right;
+    font-size: 48px;
+    font-family: 'SignPainter';
+    line-height: 43px;
+    align-items: center;
+}
+.because{
+    font-size: 48px;
+    font-family: 'SignPainter';
+    line-height: normal;
+    align-items: center;
+    color: #CD901B;
+    margin: 0;
+    height: 100%;
+
+}
+.arabic{
+    color: green;
+    font-size: 70px;
+    display: inline-block;
+    margin: 25px 0 0 0;
+}
+.kinds{
+    color: red;
+}
+/* ////////////////////////////////////////////////ARTICLE/////////////////////////////////////////////////////////////// */
+article{
+    width: 100%;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/46619618\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.coffee1{
+    width: 15%;
+    height: 30%;
+    border-radius: 30px;
+    float: left;
+}
+.coffee2{
+    width: 12%;
+    height: 25%;
+    border-radius: 100%;
+    float: right;
+}
+/* //////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////////// */
+footer{
+    background:linear-gradient(180deg,#256759 ,#183F37);
+    padding: 7px ;
+    display: flex;
+    justify-content: space-around;
+    width:auto;
+    margin-top: -10px;
+}
+.footer-logo{
+    width: 170px;
+    height: 170px;
+    margin-top: 10px;
+}
+.footer-call h2{
+    margin: 0;
+    font-size: 40px;
+    color:white;
+}
+.footer-call input{
+    width: 600px;
+    border-radius: 9px;
+    border: none;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 12px; 
+    margin-top: 10px;
+    background: #C4D4D0;
+}
+.footer-call .adress p{
+    font-size: 25px;
+    margin-top: 0;
+    margin-left: 10px;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+}
+.footer-call .adress{
+    display: flex;
+    margin-top: 20px;
+}
+.footer-call .adress img{
+    width: 30px;
+    height: 30px;
+}
+footer .contacts{
+    width: 230px;
+}
+footer .contacts p{
+    font-size: 25px;
+    margin-top:10px;
+    color:white;
+}
+footer .contacts p a{
+    color:white;
+    text-decoration: none;
+}
+::placeholder{
+    color: whitesmoke;
+    font-family:'Roboto' ;
+    font-size: 27px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1280px){
+    @font-face {
+        font-family: 'SignPainter';
+        src: url('./fonts/232-font.otf');
+        src: local(':relaxed:'), url('./fonts/232-font.otf') format('woff'),
+          url('./fonts/232-font.otf') format('truetype'),
+          url('./fonts/232-font.otf') format('svg');
+        font-weight: normal;
+        font-style: italic;
+      }
+    html,
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    /* ////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////// */
+    header{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 105px;
+        z-index: 10;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, #21453D 0%, #256759 27.6%), #256759;
+    }
+    .head{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .head .logo{
+        position: absolute;
+        width: 165px;
+        height: 165px;
+        margin-top: 25px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 455px ;
+        height: 90%;
+        background-image: url(./img/bamboo-wood-texture-desk_42702-71\ 1.png);
+        filter: drop-shadow(0px 9px 0px rgba(0, 0, 0, 0.25));
+        border-radius: 15px;
+    }
+    .nav a{
+        font-size: 45px;
+        color: white;
+        font-family: 'SignPainter';
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+    }
+    /* .........подчеркивание....... */
+    .nav a::before{
+        content: '';
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        width: 0%;
+        height: 5px;
+        background-color: white;
+        transition: 0.2s;
+    }
+    .nav a:hover:before{
+        width: 100%;
+        left: 0;
+    }   
+    /* ............................ */
+    .nav2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+    }
+    .nav2 a{
+        font-family: 'SignPainter';
+        font-size: 43px;
+        list-style: none;
+        text-decoration: none;
+        width: 180px;
+        color: white;
+        line-height: 45px;
+    }
+    
+    /* /////////////////////////////////////////////////////////SECTION///////////////////////////////////////////////////////// */
+    section{
+        background-image: url(./img/coffee-bg.png);
+        background-repeat: repeat-y;
+        background-size: 100%;
+        width: 100%;
+        height: 700px;
+        padding-top: 120px;
+    }
+    .bg{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        margin-left: 50%;
+    }
+    .bg img{
+        position: absolute;
+    }
+    .first_png{
+        width: 93%;
+        height: 570px;
+        margin-top: 2%;
+        margin-left: 3.5%;
+    }
+    .second_png{
+        width: 58%;
+        height:250px;
+        margin-left: 42%;
+        margin-top: -3%;
+    }
+    .third_png{
+        width: 40%;
+        height: 350px;
+        opacity: 80%;
+        margin-top: 53%;
+        margin-left: 7%;
+    }
+    .content{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .photo_scale{
+        width: 60%;
+        height:520px;
+        margin-top: 20px;
+    }
+    .description{
+        width: 40%;
+    }
+    .description p{
+        text-align: right;
+        font-size: 40px;
+        font-family: 'SignPainter';
+        line-height: 40px;
+        align-items: center;
+    }
+    .because{
+        font-size: 40px;
+        font-family: 'SignPainter';
+        line-height: normal;
+        align-items: center;
+        color: #CD901B;
+    }
+    .arabic{
+        color: green;
+        font-size: 70px;
+        display: inline-block;
+        margin: 25px 0 0 0;
+    }
+    .kinds{
+        color: red;
+    }
+    /* ////////////////////////////////////////////////ARTICLE/////////////////////////////////////////////////////////////// */
+    article{
+        width: 100%;
+        height: 650px;
+        margin: 0;
+        padding: 0;
+        background-image: url(./img/46619618\ 1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .coffee1{
+        width: 12%;
+        height: 30%;
+        border-radius: 30px;
+        float: left;
+    }
+    .coffee2{
+        width: 15%;
+        height: 25%;
+        border-radius: 100%;
+        float: right;
+    }
+    /* //////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////////// */
+    footer{
+        background:linear-gradient(180deg,#256759 ,#183F37);
+        padding: 7px ;
+        display: flex;
+        justify-content: space-around;
+        width:auto;
+        margin-top: -10px;
+    }
+    .footer-logo{
+        width: 155px;
+        height: 155px;
+    }
+    .footer-call h2{
+        margin: 0;
+        font-size: 40px;
+        color:white;
+    }
+    .footer-call input{
+        width: 600px;
+        border-radius: 9px;
+        border: none;
+        height: 30px;
+        outline: none;
+        font-size: 18px;
+        padding: 5px 12px; 
+        margin-top: 10px;
+        background: #C4D4D0;
+    }
+    .footer-call .adress p{
+        font-size: 25px;
+        margin-top: 0;
+        margin-left: 10px;
+        font-style: italic;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:white;
+    }
+    .footer-call .adress{
+        display: flex;
+        margin-top: 20px;
+    }
+    .footer-call .adress img{
+        width: 30px;
+        height: 30px;
+    }
+    footer .contacts{
+        width: 230px;
+    }
+    footer .contacts p{
+        font-size: 25px;
+        margin-top:10px;
+        color:white;
+    }
+    footer .contacts p a{
+        color:white;
+        text-decoration: none;
+    }
+    ::placeholder{
+        color: whitesmoke;
+        font-family:'Roboto' ;
+        font-size: 27px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px){
+    /* ////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////// */
+    header{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        z-index: 10;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, #21453D 0%, #256759 27.6%), #256759;
+    }
+    .head{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .head .logo{
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        margin-top: 30px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 355px ;
+        height: 90%;
+        background-image: url(./img/bamboo-wood-texture-desk_42702-71\ 1.png);
+        filter: drop-shadow(0px 9px 0px rgba(0, 0, 0, 0.25));
+        border-radius: 15px;
+    }
+    .nav a{
+        font-size:35px;
+        color: white;
+        font-family: 'SignPainter';
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+    }
+    /* .........подчеркивание....... */
+    .nav a::before{
+        content: '';
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        width: 0%;
+        height: 5px;
+        background-color: white;
+        transition: 0.2s;
+    }
+    .nav a:hover:before{
+        width: 100%;
+        left: 0;
+    }   
+    /* ............................ */
+    .nav2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+    }
+    .nav2 a{
+        font-family: 'SignPainter';
+        font-size: 35px;
+        list-style: none;
+        text-decoration: none;
+        width: 150px;
+        color: white;
+        line-height: 45px;
+    }
+    /* /////////////////////////////////////////////////////////SECTION///////////////////////////////////////////////////////// */
+    section{
+        background-image: url(./img/coffee-bg.png);
+        background-repeat: repeat-y;
+        background-size: 100%;
+        width: 100%;
+        height: 700px;
+        padding-top: 120px;
+    }
+    .bg{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        margin-left: 50%;
+    }
+    .bg img{
+        position: absolute;
+    }
+    .first_png{
+        width: 93%;
+        height: 550px;
+        margin-top: 2%;
+        margin-left: 3.5%;
+    }
+    .second_png{
+        width: 53%;
+        height:220px;
+        margin-left: 47%;
+        margin-top: -2%;
+    }
+    .third_png{
+        width: 40%;
+        height: 300px;
+        opacity: 80%;
+        margin-top: 63%;
+        margin-left: 10%;
+    }
+    .content{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .photo_scale{
+        width: 60%;
+        height:500px;
+        margin-top: 20px;
+    }
+    .description{
+        width: 40%;
+    }
+    .description p{
+        text-align: right;
+        font-size: 36px;
+        font-family: 'SignPainter';
+        line-height: 40px;
+        align-items: center;
+    }
+    .because{
+        font-size: 36px;
+        font-family: 'SignPainter';
+        line-height: normal;
+        align-items: center;
+        color: #CD901B;
+    }
+    .arabic{
+        color: green;
+        font-size: 70px;
+        display: inline-block;
+        margin: 25px 0 0 0;
+    }
+    .kinds{
+        color: red;
+    }
+    /* ////////////////////////////////////////////////ARTICLE/////////////////////////////////////////////////////////////// */
+    article{
+        width: 100%;
+        height: 550px;
+        margin: 0;
+        padding: 0;
+        background-image: url(./img/46619618\ 1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+    .coffee1{
+        width: 15%;
+        height: 30%;
+        border-radius: 30px;
+        float: left;
+    }
+    .coffee2{
+        width: 12%;
+        height: 25%;
+        border-radius: 100%;
+        float: right;
+    }
+    /* //////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////////// */
+    footer{
+        background:linear-gradient(180deg,#256759 ,#183F37);
+        padding: 7px ;
+        display: flex;
+        justify-content: space-around;
+        width:auto;
+        margin-top: -10px;
+    }
+    .footer-logo{
+        width: 140px;
+        height: 140px;
+        margin-top: 10px;
+    }
+    .footer-call h2{
+        margin: 0;
+        font-size: 40px;
+        color:white;
+    }
+    .footer-call input{
+        width: 600px;
+        border-radius: 9px;
+        border: none;
+        height: 30px;
+        outline: none;
+        font-size: 18px;
+        padding: 5px 12px; 
+        margin-top: 10px;
+        background: #C4D4D0;
+    }
+    .footer-call .adress p{
+        font-size: 25px;
+        margin-top: 0;
+        margin-left: 10px;
+        font-style: italic;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:white;
+    }
+    .footer-call .adress{
+        display: flex;
+        margin-top: 20px;
+    }
+    .footer-call .adress img{
+        width: 30px;
+        height: 30px;
+    }
+    footer .contacts{
+        width: 230px;
+    }
+    footer .contacts p{
+        font-size: 25px;
+        margin-top:10px;
+        color:white;
+    }
+    footer .contacts p a{
+        color:white;
+        text-decoration: none;
+    }
+    ::placeholder{
+        color: whitesmoke;
+        font-family:'Roboto' ;
+        font-size: 27px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px){
+    /* ////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////// */
+    html, 
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    header{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        z-index: 10;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, #21453D 0%, #256759 27.6%), #256759;
+    }
+    .head{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .head .logo{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 280px ;
+        height: 90%;
+        background-image: url(./img/bamboo-wood-texture-desk_42702-71\ 1.png);
+        filter: drop-shadow(0px 9px 0px rgba(0, 0, 0, 0.25));
+        border-radius: 15px;
+    }
+    .nav a{
+        font-size:28px;
+        color: white;
+        font-family: 'SignPainter';
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+    }
+    /* .........подчеркивание....... */
+    .nav a::before{
+        content: '';
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        width: 0%;
+        height: 5px;
+        background-color: white;
+        transition: 0.2s;
+    }
+    .nav a:hover:before{
+        width: 100%;
+        left: 0;
+    }   
+    /* ............................ */
+    .nav2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+        margin-right: 3%;
+    }
+    .nav2 a{
+        font-family: 'SignPainter';
+        font-size: 27px;
+        list-style: none;
+        text-decoration: none;
+        width: 120px;
+        color: white;
+        line-height: 30px;
+    }
+    /* /////////////////////////////////////////////////////////SECTION///////////////////////////////////////////////////////// */
+    section{
+        background-image: url(./img/coffee-bg.png);
+        background-repeat: repeat-y;
+        background-size: 100%;
+        width: 100%;
+        height: 510px;
+        padding-top: 90px;
+    }
+    .bg{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        margin-left: 50%;
+    }
+    .bg img{
+        position: absolute;
+    }
+    .first_png{
+        width: 83%;
+        height: 400px;
+        margin-top: 2%;
+        margin-left: 13.5%;
+    }
+    .second_png{
+        width: 43%;
+        height:150px;
+        margin-left: 57%;
+        margin-top: -2%;
+    }
+    .third_png{
+        width: 40%;
+        height: 180px;
+        opacity: 80%;
+        margin-top: 70%;
+        margin-left: 12%;
+    }
+    .content{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .photo_scale{
+        width: 60%;
+        height:360px;
+        margin-top: 20px;
+    }
+    .description{
+        width: 40%;
+        height: 400px;
+    }
+    .description p{
+        height: 100%;
+        text-align: right;
+        font-size: 25px;
+        font-family: 'SignPainter';
+        line-height: 29px;
+        align-items: center;
+    }
+    .kinds{
+        color: red;
+    }
+    .arabic{
+        color: green;
+        font-size: 50px;
+        display: inline-block;
+        margin: 25px 0 0 0;
+    }
+    .because{
+        font-size: 29px;
+        height: 100%;
+        margin: 0;
+        font-family: 'SignPainter';
+        line-height: normal;
+        color: #CD901B;
+    }
+    /* ////////////////////////////////////////////////ARTICLE/////////////////////////////////////////////////////////////// */
+    article{
+        width: 100%;
+        height: 430px;
+        margin: 0;
+        padding: 0;
+        background-image: url(./img/46619618\ 1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+    .coffee1{
+        width: 15%;
+        height: 30%;
+        border-radius: 30px;
+        float: left;
+    }
+    .coffee2{
+        width: 12%;
+        height: 25%;
+        border-radius: 100%;
+        float: right;
+    }
+    /* //////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////////// */
+    footer{
+        background:linear-gradient(180deg,#256759 ,#183F37);
+        padding: 7px ;
+        display: flex;
+        justify-content: space-around;
+        width:auto;
+        margin-top: -10px;
+    }
+    .footer-logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+    }
+    .footer-call h2{
+        margin: 0;
+        font-size: 35px;
+        color:white;
+    }
+    .footer-call input{
+        width: 300px;
+        border-radius: 9px;
+        border: none;
+        height: 30px;
+        outline: none;
+        font-size: 18px;
+        padding: 5px 12px; 
+        margin-top: 10px;
+        background: #C4D4D0;
+    }
+    .footer-call .adress p{
+        font-size: 20px;
+        margin-top: 0;
+        margin-left: 10px;
+        font-style: italic;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:white;
+    }
+    .footer-call .adress{
+        display: flex;
+        margin-top: 20px;
+    }
+    .footer-call .adress img{
+        width: 30px;
+        height: 30px;
+    }
+    footer .contacts{
+        width: 200px;
+    }
+    footer .contacts p{
+        font-size: 21px;
+        margin-top:10px;
+        color:white;
+    }
+    footer .contacts p a{
+        color:white;
+        text-decoration: none;
+    }
+    ::placeholder{
+        color: whitesmoke;
+        font-family:'Roboto' ;
+        font-size: 27px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:360px){
+    /* ////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////// */
+    html, 
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    header{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        z-index: 10;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, #21453D 0%, #256759 27.6%), #256759;
+    }
+    .head{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .head .logo{
+        position: absolute;
+        width: 70px;
+        height:70px;
+        margin-top: 15px;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 120px;
+        height: 90%;
+        background-image: url(./img/bamboo-wood-texture-desk_42702-71\ 1.png);
+        filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.25));
+        border-radius: 15px;
+    }
+    .nav a{
+        font-size:12px;
+        color: white;
+        font-family: 'SignPainter';
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+    }
+    /* .........подчеркивание....... */
+    .nav a::before{
+        content: '';
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        width: 0%;
+        height:3px;
+        background-color: white;
+        transition: 0.2s;
+    }
+    .nav a:hover:before{
+        width: 100%;
+        left: 0;
+    }   
+    /* ............................ */
+    .nav2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+        margin-right: 0.5%
+    }
+    .nav2 a{
+        font-family: 'SignPainter';
+        font-size: 12px;
+        list-style: none;
+        text-decoration: none;
+        width: 50px;
+        color: white;
+        line-height: 15px;
+    }
+    /* /////////////////////////////////////////////////////////SECTION///////////////////////////////////////////////////////// */
+    section{
+        background-image: url(./img/coffee-bg.png);
+        background-repeat: repeat-y;
+        background-size: 100%;
+        width: 100%;
+        height: 290px;
+        padding-top: 50px;
+    }
+    .bg{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        margin-left: 50%;
+    }
+    .bg img{
+        position: absolute;
+    }
+    .first_png{
+        width: 83%;
+        height: 230px;
+        margin-top: 2%;
+        margin-left: 13.5%;
+    }
+    .second_png{
+        width: 43%;
+        height:70px;
+        margin-left: 57%;
+        margin-top: -2%;
+    }
+    .third_png{
+        width: 35%;
+        height: 90px;
+        opacity: 80%;
+        margin-top: 95%;
+        margin-left: 15%;
+    }
+    .content{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .photo_scale{
+        width: 60%;
+        height:200px;
+        margin-top: 20px;
+    }
+    .description{
+        width: 40%;
+        height: 200px;
+    }
+    .description p{
+        height: 100%;
+        text-align: right;
+        font-size: 13px;
+        font-family: 'SignPainter';
+        line-height: 15px;
+        align-items: center;
+    }
+    .kinds{
+        color: red;
+    }
+    .arabic{
+        color: green;
+        font-size: 20px;
+        display: inline-block;
+        margin: 15px 0 0 0;
+    }
+    .because{
+        font-size: 13px;
+        margin-top: 5%;
+        font-family: 'SignPainter';
+        line-height: normal;
+        color: #CD901B;
+    }
+    /* ////////////////////////////////////////////////ARTICLE/////////////////////////////////////////////////////////////// */
+    article{
+        width: 100%;
+        height: 230px;
+        margin: 0;
+        padding: 0;
+        background-image: url(./img/46619618\ 1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+    .coffee1{
+        width: 15%;
+        height: 30%;
+        border-radius: 30px;
+        float: left;
+    }
+    .coffee2{
+        width: 12%;
+        height: 25%;
+        border-radius: 100%;
+        float: right;
+    }
+    /* //////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////////// */
+    footer{
+        background:linear-gradient(180deg,#256759 ,#183F37);
+        padding: 7px ;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width:auto;
+        margin-top: -10px;
+    }
+    /* .foot{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+    .footer-logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 0px;
+    }
+    /* .footer-call{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+    .footer-call h2{
+        margin: 0;
+        font-size: 35px;
+        color:white;
+        text-align: center; 
+    }
+    .footer-call input{
+        width: 300px;
+        border-radius: 9px;
+        border: none;
+        height: 30px;
+        outline: none;
+        font-size: 18px;
+        padding: 5px 12px; 
+        margin-top: 5px;
+        background: #C4D4D0;
+    }
+    .footer-call .adress p{
+        font-size: 20px;
+        margin-top: 0;
+        margin-left: 10px;
+        font-style: italic;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:white;
+    }
+    .footer-call .adress{
+        display: flex;
+        margin-top: 20px;
+    }
+    .footer-call .adress img{
+        width: 30px;
+        height: 30px;
+    }
+    footer .contacts{
+        width: 200px;
+        text-align: center;
+    }
+    footer .contacts p{
+        font-size: 21px;
+        margin-top:5px;
+        color:white;
+    }
+    footer .contacts p a{
+        color:white;
+        text-decoration: none;
+    }
+    ::placeholder{
+        color: whitesmoke;
+        font-family:'Roboto' ;
+        font-size: 27px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:410px){
+    /* ////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////////////////////// */
+    html, 
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    header{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        z-index: 10;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, #21453D 0%, #256759 27.6%), #256759;
+    }
+    .head{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .head .logo{
+        position: absolute;
+        width: 70px;
+        height:70px;
+        margin-top: 15px;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 120px;
+        height: 90%;
+        background-image: url(./img/bamboo-wood-texture-desk_42702-71\ 1.png);
+        filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.25));
+        border-radius: 15px;
+    }
+    .nav a{
+        font-size:12px;
+        color: white;
+        font-family: 'SignPainter';
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+    }
+    /* .........подчеркивание....... */
+    .nav a::before{
+        content: '';
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        width: 0%;
+        height:3px;
+        background-color: white;
+        transition: 0.2s;
+    }
+    .nav a:hover:before{
+        width: 100%;
+        left: 0;
+    }   
+    /* ............................ */
+    .nav2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+        margin-right: 0.5%
+    }
+    .nav2 a{
+        font-family: 'SignPainter';
+        font-size: 12px;
+        list-style: none;
+        text-decoration: none;
+        width: 50px;
+        color: white;
+        line-height: 15px;
+    }
+    /* /////////////////////////////////////////////////////////SECTION///////////////////////////////////////////////////////// */
+    section{
+        background-image: url(./img/coffee-bg.png);
+        background-repeat: repeat-y;
+        background-size: 100%;
+        width: 100%;
+        height: 290px;
+        padding-top: 50px;
+    }
+    .bg{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        margin-left: 50%;
+    }
+    .bg img{
+        position: absolute;
+    }
+    .first_png{
+        width: 83%;
+        height: 230px;
+        margin-top: 2%;
+        margin-left: 13.5%;
+    }
+    .second_png{
+        width: 43%;
+        height:70px;
+        margin-left: 57%;
+        margin-top: -2%;
+    }
+    .third_png{
+        width: 35%;
+        height: 90px;
+        opacity: 80%;
+        margin-top: 95%;
+        margin-left: 15%;
+    }
+    .content{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .photo_scale{
+        width: 60%;
+        height:200px;
+        margin-top: 20px;
+    }
+    .description{
+        width: 40%;
+        height: 200px;
+    }
+    .description p{
+        height: 100%;
+        text-align: right;
+        font-size: 13px;
+        font-family: 'SignPainter';
+        line-height: 15px;
+        align-items: center;
+    }
+    .kinds{
+        color: red;
+    }
+    .arabic{
+        color: green;
+        font-size: 20px;
+        display: inline-block;
+        margin: 15px 0 0 0;
+    }
+    .because{
+        font-size: 13px;
+        margin-top: 5%;
+        font-family: 'SignPainter';
+        line-height: normal;
+        color: #CD901B;
+    }
+    /* ////////////////////////////////////////////////ARTICLE/////////////////////////////////////////////////////////////// */
+    article{
+        width: 100%;
+        height: 230px;
+        margin: 0;
+        padding: 0;
+        background-image: url(./img/46619618\ 1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+    .coffee1{
+        width: 15%;
+        height: 30%;
+        border-radius: 30px;
+        float: left;
+    }
+    .coffee2{
+        width: 12%;
+        height: 25%;
+        border-radius: 100%;
+        float: right;
+    }
+    /* //////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////////// */
+    footer{
+        background:linear-gradient(180deg,#256759 ,#183F37);
+        padding: 7px ;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width:auto;
+        margin-top: -10px;
+    }
+    /* .foot{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+    .footer-logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 0px;
+    }
+    /* .footer-call{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+    .footer-call h2{
+        margin: 0;
+        font-size: 35px;
+        color:white;
+        text-align: center; 
+    }
+    .footer-call input{
+        width: 300px;
+        border-radius: 9px;
+        border: none;
+        height: 30px;
+        outline: none;
+        font-size: 18px;
+        padding: 5px 12px; 
+        margin-top: 5px;
+        background: #C4D4D0;
+    }
+    .footer-call .adress p{
+        font-size: 20px;
+        margin-top: 0;
+        margin-left: 10px;
+        font-style: italic;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:white;
+    }
+    .footer-call .adress{
+        display: flex;
+        margin-top: 20px;
+    }
+    .footer-call .adress img{
+        width: 30px;
+        height: 30px;
+    }
+    footer .contacts{
+        width: 200px;
+        text-align: center;
+    }
+    footer .contacts p{
+        font-size: 21px;
+        margin-top:5px;
+        color:white;
+    }
+    footer .contacts p a{
+        color:white;
+        text-decoration: none;
+    }
+    ::placeholder{
+        color: whitesmoke;
+        font-family:'Roboto' ;
+        font-size: 27px;
+    }
+}
